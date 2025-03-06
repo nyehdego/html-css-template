@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css" /> 
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i> NY</a>
+
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link">Home</a>
+      <a href="projects.html" class="navbar__link">Projects</a>
+      <a href="#" class="navbar__link">Skills</a>
+      <a href="#" class="navbar__link">About</a>
+    </div>
+  </nav>
+
+  <section id="projects" class="projects">
+    <h2>Accessible Components: Search Bar</h2>
+    <div class="project">
+      <h4>Overview</h4>
+      <p>Components are reusable elements that we as designers use to create and manage consistent designs. Common examples include buttons, checkboxes, and dropdowns. The component of our interest is the Search Bar. Most interfaces are built from a predefined set of components, and they must be accessible! 
+        So, we must understand how the Search Bar is made accessible through inputs and outputs.</p>
+    </div>
+
+    <h3>Let's look at some examples</h3>
+    <div class="image-gallery">
+      <h4>Google Docs</h4>
+      <h4>Photos App on Mac</h4>
+      <h4>Instagram App on iPhone</h4>
+      <img class="galleryimage" src="./assets/Google_default.png">
+      <img class="galleryimage" src="./assets/photos_mac_Default.png">
+      <img class="galleryimage" src="./assets/InstagramApp_default.jpg">
+      <img class="galleryimage" src="./assets/Google_not_default.png">
+      <img class="galleryimage" src="./assets/PhotosMac_default4.png">
+      <img class="galleryimage" src="./assets/instagram_not_default.jpg">
+    </div>
+
+    <h3>Inputs</h3>
+    <h4>What is interacting with some of these components using different inputs like?</h4>
+    <div class="input-sections">
+      <div class="input-section">
+        <h4>Google Docs</h4>
+        <ul>
+          <li>Mouse: Click on the text box to begin typing, or on search icon to run query, or on 'X' icon to delete and leave the text box</li>
+          <li>Keyboard: Use 'tab' to hover over the text box and other functions of the component, while clicking space activates whatever function is being hovered over. The 'return' button makes it easy to submit queries without needing to 'tab' back to the search button.</li>
+        </ul>
+      </div>
+
+      <div class="input-section">
+        <h4>Photos on Mac</h4>
+        <ul>
+          <li>Mouse: Click on the text box to begin typing, or on search icon to run query</li>
+          <li>Keyboard: Use 'tab' to hover over the text box and other functions of the component, while clicking space activates the whatever function being hovered over. The 'return' button works to submit queries.</li>
+        </ul>
+      </div>
+
+      <div class="input-section">
+        <h4>Instagram App on iPhone</h4>
+        <ul>
+          <li>Touch: Must use your finger to touch on the labeled box to begin cursor, and 'return' on the iPhone keyboard to submit a query.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>Initial thoughts on testing these inputs</h4>
+    <h5>What is the process like interacting with the component on the various apps?</h5>
+      <ul>
+        <li>Working in Google Docs and the Photos App on Mac is very similar experience with both the mouse and the keyboard.</li>
+        <li>The Instagram App is different because you need to navigate using your fingers.</li>
+      </ul>
+    <h5>What are all the functions the component can do (or can’t do)?</h5>
+      <ul>
+        <li>Photos App on Mac has functionality for the 'esc' button, where it deletes your search text at once instead of having to delete character by character. Google Docs doesn't have this.</li>
+        <li>Google Docs, the Photos app, and Instagram have search previews, helping to guide your input</li>
+        <li>Instagram doesn't have it's own search button. You have to use the 'return' button on the iPhone keyboard.</li>
+      </ul>
+    <h5>What functionalities of the component are learnable, memorable, and efficient?</h5>
+      <ul>
+        <li>The querying functionality is learnable and memorable because of the search icon and labels on the text box. This clearly demonstrates to users the purpose of the text box.</li>
+        <li>The results preview makes it intuitive for the user to understand that they are finding a file or account or criteria with their input text</li>
+        <li>The keybord shortcuts makes using the component efficient</li>
+      </ul>
+
+    <h3>Outputs</h3>
+    <div class="output-sections">
+      <div class="output-section">
+        <h4>Google Docs</h4>
+        <ul>
+          <li>Mouse:Clicking on the search box places a cursor at the beginning, and the label stating, "search" still stays until a character is typed. Clicking on the 'X' icon clears the output so we get an empty text box and the cursor leaves as well.</li>
+          <li>Keyboard: Typing triggers live suggestions below the search bar. Pressing the 'return' key makes query and updates</li>
+        </ul>
+      </div>
+
+      <div class="output-section">
+        <h4>Photos on Mac</h4>
+        <ul>
+          <li>Mouse: Clicking on the search box places a cursor at the beginning, and the label stating, "search" still stays until a character is typed. </li>
+        </ul>
+      </div>
+
+      <div class="output-section">
+        <h4>Instagram</h4>
+        <ul>
+          <li>Voice search for accounts & hashtags</li>
+          <li>Screen reader compatibility</li>
+          <li>Keyboard navigation on desktop</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>How is the Screen Reading and Focus Order?</h4>
+    <div class="screen-reader-thoughts">
+      <ul>
+        <li>One weakness of the screen reader in google docs is the lack of clarity. When I turn on screen reader, and make my way to the search bar, I hear the statement: “Search Bar; Search. You are currently on a menu pop-up combo box, inside of heading level 1. Type text or, to display a list of choices, press Control-Option-Space” in rapid speed.</li>
+        <li>But looking at the Photos App on Mac, it is a lot more like I would expect. Going to the search bar, the screen reader says, "Search Field, blank". This is much more understandable</li>
+        <li>The focus order is mostly good for Google Docs and for Photos. In google Docs, it starts at the Navigation Bar going left to right, where you can access the search bar component easily. However, you can't 'tab' through documents (maybe for the better since there is endless amounts).</li>
+        <li>The Photos App only lets you tab between the search bar and the left-hand side column where you can select the gallery to look through, so it's a straightforward experience</li>
+      </ul>
+    </div>
+
+    <h3>Let's focus on Google Docs' Search Component</h3>
+      <h4>This is how the interactions work on the component for the different types of users. Take a look at these state models.</h4>
+      <div class="google-docs-chart-section">
+        <img class="mouse_user_image" src="./assets/SearchComponentAsIs.png">
+        <img class="keyboard_user_image" src="./assets/SearchComponentKeyboard.png">
+      </div>
+
+      <h4>Let's revise each of these state models such that we make a change that affects how we perceive its efficiency and accessibility. </h4>
+      <div class="google-docs-chart-section">
+        <img class="mouse_user_image" src="./assets/UpdatedSearchComponentAsIs.png">
+        <img class="keyboard_user_image" src="./assets/UpdatedSearchComponentKeyboard.png">
+      </div>
+
+      <h4>What Did We Change?</h4>
+      <div class="google-chart-description">
+        <ul>
+          <li>We added functionality to the 'esc' button on keyboard, such that when keyboard users press it, their typing progress resets while keeping their cursor on the search bar. This makes it more efficient because previously, they would have to 'tab' back to the search bar after clearing their search.</li>
+          <li>The tradeoff we made with mouse users is that we took away the ability to click off the search bar to leave it. Now, they have to go to the 'X' icon everytime they want to exit it, making that process less efficient for them.</li>
+        </ul>
+      </div>
+
+      <h4>Finally, Let's Redesign The Component</h4>
+      <h5>We'll redesign the intial state such that there is search history avaible to the user. The second state we will redesign is more so a demonstration of the new 'esc' functionality, and making the screen reading more clear (from what it was before, as explained above). Let's see this visually.</h5>
+      <img class="redesign_images" src="./assets/IntialAndActiveDiagrams.png">
+      <p>This redesign improves the screen reading and demonstrates the added functionality of the 'esc' key. The screenreader, when the cursor begins on an empty bar, will state, "Search bar ready, type desired query". This improves the screen reading issue we mentioned above.
+        And when the 'esc' button is pressed, we reset the search bar without leaving the search bar. This is different from clicking the 'X' icon because the 'X' icon would send us out of the text box all tpgether. This redesign makes the component more learnable, efficent, and accesible for screen reading and keyboard users.
+      </p>
+
+      <h2>Reflecting...</h2>
+      <p>The Google Docs search bar performs well in accessibility and usability. For ease, it is at the top of the screen so it's easy to find, and there are clear labels and guiding icons to follow. The focus order and keyboard logic is standard, but the screen reader was less clear as we mentioned above. To fix this, I refined the
+        screen readers language to make for easier interpretation, shown in the redesigns. I also added 'esc' key functionality for a shortcut to delete the text in the search bar while also keeping the cursor active. This elimnates the need to tab to the 'X' icon, making it more efficient for keyboard users.
+      </p>
+      <p>Docs and the Photos App support tab navigation, which helps users with motor impairments, while live search reviews can help those with cognitive disabilities. On the other hand, the Instagram app requires tapping to activate typing, which can be difficult for motor-impaired users, and screen reader support is limited.</p>
+      <p>Overall, mouse users are the ost prioritzes, as many applications are optimized for touch and mouse interactions. The other groups face more limitations, highlighing the need for more inclusive design.</p>
+  </section>
+</body>
+</html>

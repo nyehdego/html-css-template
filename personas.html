@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css" /> 
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i> NY</a>
+
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link">Home</a>
+      <a href="projects.html" class="navbar__link">Projects</a>
+      <a href="#" class="navbar__link">Skills</a>
+      <a href="#" class="navbar__link">About</a>
+    </div>
+  </nav>
+
+  <section id ="personasprojects" class="projects">
+    <h2>Personas and Storyboarding: The Vending Machine</h2>
+    <div class ="project">
+        <h4>Overview</h4>
+        <p>Step into a user’s shoes. Let's observe real user's interactions with with an interface,
+            and interview them about their experiences. Today, we are exploring interactions with vending machines.
+            Afterwards, we will create personas using our observations and storyboard our persona's experience, all to understand our interface.
+        </p>
+    </div>
+
+    <h3>The Vending Machine</h3>
+    <p>Vending machines are a common sight around college campuses, and many students make the time to go grab their favorite snack. Although interacting seems simple, what do we find when we pay closer attention to interactions with them? 
+        Here is a sketch of a vending machine from the Sciences Library at Brown University.</p>
+
+    <h4>Vending Machine Sketch and Annotation</h4>
+    <img class ="vendingsketch" src="./assets/VendingMachineSketch.jpeg">
+
+    <h4>What can we say about this interface?</h4>
+    <p>This interface is built to help users easily identify and choose a variety of items through snack labels.
+        It also tries to provide clear instructions for vending and transaction methods with a screen displaying these instructions,
+        and labels for the various components.
+    </p>
+
+    <h2>Observing Interactions</h2>
+    <h3>Let's observe interactions of three (or four) people have with the vending machine </h3>
+    <div class="input-sections">
+        <div class="input-section">
+          <h4>Andrew</h4>
+          <ul>
+            <li>Stands there looking the machine up and down</li>
+            <li>Leaves the vending machine for a second, to then come back to it</li>
+            <li>Types in different product codes and looks at the prices</li>
+            <li>Seems to type in product codes to check the prices</li>
+            <li>Goes back to just looking at the options while literally tapping his foot</li>
+            <li>Leaves the vending machine after a bit more time</li>
+          </ul>
+        </div>
+        <div class="input-section">
+          <h4>Ryan</h4>
+          <ul>
+            <li>Scans the machine pretty quickly</li>
+            <li>Types in product codes to check prices</li>
+            <li>Walks away while staring back at the vending machine, but then comes back</li>
+            <li>Leaves again, with a stressed look on his face</li>
+          </ul>
+        </div>
+  
+        <div class="input-section">
+          <h4>Eliana and Alina</h4>
+          <ul>
+            <li>Looking together, they tap on the glass, hovering over different products </li>
+            <li>Eliana swipes her school card</li>
+            <li>Eliana and Alina bend down to read the small screen</li>
+            <li>Eliana swipes twice more</li>
+            <li>They go to a neighboring vending machine, and leave with a snack</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Interviewing Users</h2>
+      <h3>Now, let's interview the users we observed, with specific questions to try to remove potential answer biases</h3>
+      <div class="input-sections">
+          <div class="input-section">
+            <h3>Andrew</h3>
+            <h4>How often do you use vending machines? (Avoids assumptions about prior use)</h4>
+            <ul>
+              <li>'3-4 times a week.'</li>
+            </ul>
+            <h4>What did you think the interface would look like? (Encourages users to share expectations without suggesting an answer)</h4>
+            <ul>
+              <li>'A system with snacks and labels to type in somewhere on a keypad.'</li>
+            </ul>
+            <h4>Can you briefly describe what steps you took to complete your task using this interface? (Allows users to describe actions without judgement)</h4>
+            <ul>
+              <li>'Looked at the item of my interest, used the keypad to track the number and to then type it in.'</li>
+            </ul>
+            <h4>What stood out to you about this interface? (Encourages unbiased feedback)</h4>
+            <ul>
+              <li>'The prices stood out more so than the interface. It was self-explanatory.'</li>
+            </ul>
+            <h4>Were there any pain points where you had to pause and think for a moment? (Frames difficulty in a neutral way)</h4>
+            <ul>
+              <li>'Not really any pain points, it was easy to use for me since I use it a lot.'</li>
+            </ul>
+            <h4>How did you decide what button or option to choose next? (Avoids implying they made mistakes)</h4>
+            <ul>
+              <li>'Based on the item, I would know which number to type in.'</li>
+            </ul>
+            <h4>How would you describe your experience using this interface? (Non-leading question to gauge emotions)</h4>
+            <ul>
+              <li>'I was satisfied with the experience, the machine was quickly responsive.'</li>
+            </ul>
+            <h4>Did anything about the machine surprise you? (Neutral phrasing to not suggest a positive or negative answer)</h4>
+            <ul>
+              <li>'Nothing about the machine, no. Just the prices.'</li>
+            </ul>
+            <h4>If you could change one thing about this interface, what would it be? (To enourge feedback without making assumptions)</h4>
+            <ul>
+              <li>'It'd be less work to have the prices already under the item.'</li>
+            </ul>
+            <h4>How would you explain how to use this interface to someone who's never used it before? (Reveals what users find important or challenging without asking directly)</h4>
+            <ul>
+              <li>'Look at the food you want, go to the keypad and press in its number, then swipe your card or pay cash.'</li>
+            </ul>
+          </div>
+          <div class="input-sections">
+            <div class="input-section">
+              <h3>Ryan</h3>
+              <h4>How often do you use vending machines? (Avoids assumptions about prior use)</h4>
+              <ul>
+                <li>'Once every few days'</li>
+              </ul>
+              <h4>What did you think the interface would look like? (Encourages users to share expectations without suggesting an answer)</h4>
+              <ul>
+                <li>'A simple system, I grew up with it and see pretty much the same thing everywhere.'</li>
+              </ul>
+              <h4>Can you briefly describe what steps you took to complete your task using this interface? (Allows users to describe actions without judgement)</h4>
+              <ul>
+                <li>'I made sure the item I wanted was available, but the machine was down when I went to use the keypad, so I couldn't get my snack'</li>
+              </ul>
+              <h4>What stood out to you about this interface? (Encourages unbiased feedback)</h4>
+              <ul>
+                <li>'Nothing really stood out to me.'</li>
+              </ul>
+              <h4>Were there any pain points where you had to pause and think for a moment? (Frames difficulty in a neutral way)</h4>
+              <ul>
+                <li>'It was the first time I've been locked out and I was confused on whether it was something on my end or its end.'</li>
+              </ul>
+              <h4>How did you decide what button or option to choose next? (Avoids implying they made mistakes)</h4>
+              <ul>
+                <li>'Really I spammed buttons to see if something would fix the lock out because I really wanted my snack'</li>
+              </ul>
+              <h4>How would you describe your experience using this interface? (Non-leading question to gauge emotions)</h4>
+              <ul>
+                <li>'It was great until I realized it wasn't working properly.'</li>
+              </ul>
+              <h4>Did anything about the machine surprise you? (Neutral phrasing to not suggest a positive or negative answer)</h4>
+              <ul>
+                <li>'The way they prompted the keypad was locked. It didn't let you know beforehand, so it locked you out after trying, and then would revert back to the original screen as if it's working fine.'</li>
+              </ul>
+              <h4>If you could change one thing about this interface, what would it be? (To enourge feedback without making assumptions)</h4>
+              <ul>
+                <li>'I'd make things more clear in terms of the prices of each item.'</li>
+              </ul>
+              <h4>How would you explain how to use this interface to someone who's never used it before? (Reveals what users find important or challenging without asking directly)</h4>
+              <ul>
+                <li>'Find the item you want and its number, take your card and swipe in the holster, and from
+                    there it will guide with instructions, and press done.'</li>
+              </ul>
+            </div>    
+            <div class="input-sections">
+                <div class="input-section">
+                  <h3>Eliana and Alina</h3>
+                  <h4>How often do you use vending machines? (Avoids assumptions about prior use)</h4>
+                  <ul>
+                    <li>'Maybe three times a week we use it'</li>
+                  </ul>
+                  <h4>What did you think the interface would look like? (Encourages users to share expectations without suggesting an answer)</h4>
+                  <ul>
+                    <li>'Just like your average vending machine, something simple enough with payment options and a good variety.'</li>
+                  </ul>
+                  <h4>Can you briefly describe what steps you took to complete your task using this interface? (Allows users to describe actions without judgement)</h4>
+                  <ul>
+                    <li>'We looked at the options and after finding the one, we tried swiping the school card but it declined. Then we tried again and it declined. So then we went to a different one and got some ice cream.'</li>
+                  </ul>
+                  <h4>What stood out to you about this interface? (Encourages unbiased feedback)</h4>
+                  <ul>
+                    <li>'Alina was confused about how to swipe the card, but I found it straightforward.'</li>
+                  </ul>
+                  <h4>Were there any pain points where you had to pause and think for a moment? (Frames difficulty in a neutral way)</h4>
+                  <ul>
+                    <li>'No, we don't think we did.'</li>
+                  </ul>
+                  <h4>How did you decide what button or option to choose next? (Avoids implying they made mistakes)</h4>
+                  <ul>
+                    <li>'We waited for the instructions on the screen for the next step, so just following that.'</li>
+                  </ul>
+                  <h4>How would you describe your experience using this interface? (Non-leading question to gauge emotions)</h4>
+                  <ul>
+                    <li>'Frustrating for sure. We wanted the bag of chips but we couldn't get it. It's also unclear sometimes about whether it took your money or not because of the initial deposit card payment system.'</li>
+                  </ul>
+                  <h4>Did anything about the machine surprise you? (Neutral phrasing to not suggest a positive or negative answer)</h4>
+                  <ul>
+                    <li>'When we first started using the vending machines, we didn't like the deposit system in place for card orders.'</li>
+                  </ul>
+                  <h4>If you could change one thing about this interface, what would it be? (To enourge feedback without making assumptions)</h4>
+                  <ul>
+                    <li>'It would be so cool if you could speak to it so that the process is shorter.'</li>
+                  </ul>
+                  <h4>How would you explain how to use this interface to someone who's never used it before? (Reveals what users find important or challenging without asking directly)</h4>
+                  <ul>
+                    <li>'Go up to the machine, debate what you want, press the number in of the snack using the buttons, put in your card or cash, wait for the vending message, 
+                        and pick it up from the slot. If it says to make another selection, do so, if not, press complete.'</li>
+                  </ul>
+                </div>    
+        </div>
+        <h2>Creating Personas</h2>
+        <h3>Let's create two personas based on our observations and interviews by creating an empathy map for both.</h3>
+        <h4>First Persona</h4>
+        <div class="empathy-map">
+            <h2>Empathy Map: The Time Conscience Student Looking For A Quick Snack</h2>
+            <div class="empathy-grid">
+              <div class="empathy-item feels">
+                <h3>Feels</h3>
+                <p>Slightly frustrated if the process takes longer than expected.</p>
+              </div>
+              <div class="empathy-item says">
+                <h3>Says</h3>
+                <p>"I just need something quick and then back to studying."</p>
+              </div>
+              <div class="empathy-item thinks">
+                <h3>Thinks</h3>
+                <p>Expects the vending machine to be straightforward and efficient. Wonders if items are priced fairly compared to nearby options.</p>
+              </div>
+              <div class="empathy-item does">
+                <h3>Does</h3>
+                <p>Scans the options quickly, types in the code, swipes card, leaves the machine if it doesn't go through the first few tries.</p>
+              </div>
+            </div>
+        </div>
+        <div class="input-sections">
+            <div class="input-section">
+              <h4>Interface Problems This Persona Faces</h4>
+              <ul>
+                <li>Lack of clear pricing display without having to input product code.</li>
+                <li>Inconsistent payment methods (does not accept school card like other machines).</li>
+                <li>Poor error messaging when machine is out of service.</li>
+              </ul>
+            </div>
+      
+            <div class="input-section">
+              <h4>Why This Persona Represents Users</h4>
+              <ul>
+                <li>This persona captures the majority of the users we observed who priortize speed and convenience. Our observations of Andrew and Ryan align with 
+                    this persona, where users expect simple interactions and feel frustration when the machine fails to deliver quickly.</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Second Persona</h4>
+          <div class="empathy-map">
+              <h2>Empathy Map: The Group Browser Looking For A Treat With Friends</h2>
+              <div class="empathy-grid">
+                <div class="empathy-item feels">
+                  <h3>Feels</h3>
+                  <p>Excited to share a snack with friends, but frustrated if the machine malfunctions.</p>
+                </div>
+                <div class="empathy-item says">
+                  <h3>Says</h3>
+                  <p>"Ohh, what do we get?"</p>
+                  <p>"Why isn't it working?"</p>
+                  <p>"Try swiping again"</p>
+                </div>
+                <div class="empathy-item thinks">
+                  <h3>Thinks</h3>
+                  <p>Expects the vending machine to be more intuitive with option selection. Wonders if all items are in stock.</p>
+                </div>
+                <div class="empathy-item does">
+                  <h3>Does</h3>
+                  <p>Discusses options with friends, taps on the glass to point out snacks, swipes card multiple times, moves to another machine if unsuccessful.</p>
+                </div>
+              </div>
+          </div>
+          <div class="input-sections">
+              <div class="input-section">
+                <h4>Interface Problems This Persona Faces</h4>
+                <ul>
+                  <li>Confusing instructions for first-time users.</li>
+                  <li>Lack of clear feedback on failed transactions</li>
+                </ul>
+              </div>
+        
+              <div class="input-section">
+                <h4>Why This Persona Represents Users</h4>
+                <ul>
+                  <li>This persona represents users who engage with the interface in a more social, exploratory way. The experiences of Eliana and Alina 
+                    reflect how vending machines can cause confusion and frustration for users unfamiliar with the payment process or expecting more interactive elements.</li>
+                </ul>
+              </div>
+            </div>
+    <h3>Finally, let's storyboard our first personas (The Time Conscience Student Looking For A Quick Snack) interaction with the vending machine</h3>
+    <div class="storyboard">
+        <div class="storyboard__frame">
+        <img src="./assets/frame1.jpeg" alt="Storyboard Frame 1">
+        <p>The student sees the vending machine in the hallway between classes and walks towards it. He's in a rush, looking at his phone.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame2.jpeg" alt="Storyboard Frame 2">
+        <p>The student quickly scans the product options behind the glass, searching for a granola bar.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame3.jpeg" alt="Storyboard Frame 3">
+        <p>He realizes there are no visible prices on products themselves, requiring him to see the price on the screen.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame4.jpeg" alt="Storyboard Frame 4">
+        <p>The student types the code for the granola bar, glancing back at his phone.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame5.jpeg" alt="Storyboard Frame 5">
+        <p>He quickly swipes his student card without hesitation, expecting an instant transaction.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame6.jpeg" alt="Storyboard Frame 6">
+        <p>An error message appears: "Card Not Accepted".</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame7.jpeg" alt="Storyboard Frame 7">
+        <p>He tries swiping the card again, but the same error message appears. He sighs in frustration.</p>
+        </div>
+        <div class="storyboard__frame">
+        <img src="./assets/frame8.jpeg" alt="Storyboard Frame 8">
+        <p>After a few seconds of waiting, he gives up and walks away, still hungry and disappointed. He thinks about how the machine should clearly display prices and accepted payment methods.</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
