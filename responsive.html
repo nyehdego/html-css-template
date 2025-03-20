@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css" /> 
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i> NY</a>
+
+    <div class="navbar__menu">
+      <a href="#" class="navbar__link">Home</a>
+      <a href="projects.html" class="navbar__link">Projects</a>
+      <a href="#" class="navbar__link">Skills</a>
+      <a href="#" class="navbar__link">About</a>
+    </div>
+  </nav>
+
+  <section id ="responsiveredesignprojects" class="projects">
+    <h2>Responsive Redesign: My Mother's Restaurant Website</h2>
+    <div class ="project">
+        <h4>Overview</h4>
+        <p>The goal of this project is to redesign a web page. Not just any web page, my mom's restaurant's web page! 
+            We will analyze and see if we identify any flaws in the current web page, create mockups for different
+            screen sizes, and then build a responsive web page based on these prototypes. 
+        </p>
+    </div>
+
+    <h3>Why AsmaraMaine.com?</h3>
+    <p>I picked the menu page of my mom's small Eritrean restaurant, located in 
+        Portland, ME, because her and I have been looking for a solution to the visually unappealing 
+        website. This is the time to take action!</p>
+
+    <img class="menu__page" src="assets/CurrentAsmaraMenuPage.png" alt="Asmara Restaurant Menu Change" width="800">
+
+    <h3>Finding Problems</h3>
+    <h4>Let's take a look at the efficiency, learnability and memorability of the menu page, as well as items
+        conceptual model and potential accessibility problems. </h4>
+
+    <div class="input-sections">
+        <div class="input-section">
+            <h4>Efficiency</h4>
+            <p>The menu is presented in a straightforward manner, listing the dishes along with descriptions. 
+                This however lacks clear sectioning for ease of accessing portions of the menu a customer 
+                may desire immediately, slowing down efficiency. In addition, on smaller screen sizes, 
+                the prices of certain dishes get moved to different lines from the item they belong this isn’t visually appealing to me or good responsive design. </p>
+        </div>
+        <div class="input-section">
+            <h4>Learnability</h4>
+            <p>The page, being very minimalist, contributes to high learnability. It’s easy to navigate the menu without previous instructions. It is also a 
+                consistent layout through the website nevermind the fact that we are focused on this one page. </p>
+        </div>
+        <div class="input-section">
+            <h4>Memorability</h4>
+            <p>Due to the minimalism, users who return to the site are likely able to remember how to navigate, especially with clear labels.  </p>
+        </div>
+        <div class="input-section">
+            <h4>Conceptual Model</h4>
+            <p>The conceptual model goes along with traditional restaurant menus, where the menu is scrollable. However, the lack of clear categorization and heading on the menu is not something you’d see on a paper menu. Improving this can enhance the conceptual model. 
+            </p>
+        </div>
+        <h4>What did WebAIM WAVE say about accessbility?</h4>
+        <p>Wave detected a potential accessibility problem, saying there is no heading structure. 
+            I would agree with this because it was hard to differentiate within the menu. 
+            I think this is the main concern WAVE ended up detecting, while the others were points like ‘use of an unordered list’ and 
+            lack of aria labels, which are important concepts for those who need screen reading. I agree with these accessibility issues. </p>
+    </div>
+
+    <h3>Visual Redesign</h3>
+    <h4>Based on these problems, let's create a visual design style guide, and mockups.  </h4>
+    <div class="input-sections">
+        <div class="input-section">
+            <h4>Visual Design Style Guide</h4>
+            <img src="assets/VisualDesignStyleguide.jpeg" alt="Visual Design Style Guide" width="450">
+        </div>
+        <div class="input-section">
+            <h4>Computer Screen Size Design</h4>
+            <img src="assets/ComputerSizedDesignAsmara.jpeg" alt="Computer Size Design" width="450">
+            <ul>
+                <li>Initial page size has buttons in a row</li>
+                <li>Logo and nav-bar are on the same line</li>
+                <li>When hovering over a category button, the opacity decreases such that it's more transparent (for all screen sizes)</li>
+            </ul>
+        </div>
+        <div class="input-section">
+            <h4>Tablet Size Design</h4>
+            <img src="assets/TabletSizedDesignAsmara.jpeg" alt="Tablet Size Design" width ="450">
+            <ul>
+                <li>Nav-Bar moves to under the logo and the logo becomes central when we go from desktop to tablet</li>
+                <li>Notice the spacing got smaller between the option and its price as the screen size goes down.</li>
+            </ul>
+        </div>
+        <div class="input-section">
+            <h4>Phone Size Design</h4>
+            <img src="assets/PhoneSizedRedesignAsmara.jpeg" alt="Phone Size Design" width="300">
+            <ul>
+                <li>The category buttons stack as the screen comes to phone width</li>
+                <li>Nav-Bar gets hidden behind a menu icon</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>The Redesign</h3>
+    <h4>Check out my redesign for Asmara Restaurant's Menu Page below. We hope you visit sometime!</h4>
+    <h5><a href="https://nyehdego.github.io/asmara-restaurant/">Redesign</a></h5>
+</section>
+</body>
